@@ -5,7 +5,6 @@
   <% else %>
     <%= "▢" %>
   <% end %>
-  <%= " - " + task.title + ", " %>
-  <%= task.details %>
+   <%= link_to " #{task.title}", task_path(task) %>
   <br>
 <% end %>

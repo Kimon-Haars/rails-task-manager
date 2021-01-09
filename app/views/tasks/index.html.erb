@@ -1,0 +1,11 @@
+<h1>🦊Your tasks🦁</h1>
+<% @tasks.each do |task| %>
+  <% if task.completed %>
+    <%= "☑️" %>
+  <% else %>
+    <%= "▢" %>
+  <% end %>
+  <%= " - " + task.title + ", " %>
+  <%= task.details %>
+  <br>
+<% end %>
